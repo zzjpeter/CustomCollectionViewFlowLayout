@@ -246,7 +246,7 @@
 
 - (NSMutableArray *)widthArray
 {
-    if (_widthArray) {
+    if (!_widthArray) {
         _widthArray = [NSMutableArray new];
     }
     return _widthArray;
