@@ -11,6 +11,7 @@
 		471A596322C4939B00773772 /* WaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A596222C4939B00773772 /* WaterFallLayout.m */; };
 		471A596622C4A23800773772 /* ReusableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A596522C4A23800773772 /* ReusableLayout.m */; };
 		471A596A22C4A5FC00773772 /* LayoutStringController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A596922C4A5FC00773772 /* LayoutStringController.m */; };
+		471A597322C5D83800773772 /* WaterFallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A597222C5D83800773772 /* WaterFallController.m */; };
 		473E2B3222C07E220083675F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 473E2B3122C07E220083675F /* AppDelegate.m */; };
 		473E2B3522C07E220083675F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473E2B3422C07E220083675F /* ViewController.m */; };
 		473E2B3822C07E220083675F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473E2B3622C07E220083675F /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 		471A596522C4A23800773772 /* ReusableLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReusableLayout.m; sourceTree = "<group>"; };
 		471A596822C4A5FC00773772 /* LayoutStringController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutStringController.h; sourceTree = "<group>"; };
 		471A596922C4A5FC00773772 /* LayoutStringController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutStringController.m; sourceTree = "<group>"; };
+		471A597122C5D83800773772 /* WaterFallController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFallController.h; sourceTree = "<group>"; };
+		471A597222C5D83800773772 /* WaterFallController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFallController.m; sourceTree = "<group>"; };
 		473E2B2D22C07E220083675F /* CustomCollectionViewFlowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCollectionViewFlowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		473E2B3022C07E220083675F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		473E2B3122C07E220083675F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 			children = (
 				471A596822C4A5FC00773772 /* LayoutStringController.h */,
 				471A596922C4A5FC00773772 /* LayoutStringController.m */,
+				471A597122C5D83800773772 /* WaterFallController.h */,
+				471A597222C5D83800773772 /* WaterFallController.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 				471A596322C4939B00773772 /* WaterFallLayout.m in Sources */,
 				473E2B3522C07E220083675F /* ViewController.m in Sources */,
 				473E2B4022C07E250083675F /* main.m in Sources */,
+				471A597322C5D83800773772 /* WaterFallController.m in Sources */,
 				47BC5C5622C20F580082DB5F /* CollectionViewFlowLayout.m in Sources */,
 				471A596A22C4A5FC00773772 /* LayoutStringController.m in Sources */,
 				473E2B4822C07FB20083675F /* CustomCollectionViewFlowLayout.m in Sources */,

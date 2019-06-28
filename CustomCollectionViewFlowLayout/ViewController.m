@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LayoutStringController.h"
+#import "WaterFallController.h"
 
 #import "Masonry.h"
 
@@ -176,7 +177,7 @@
             [self.navigationController pushViewController:[[LayoutStringController alloc] init] animated:YES];
             break;
         case 3:
-//            [self.navigationController pushViewController:[[WaterFallController alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[WaterFallController alloc] init] animated:YES];
             break;
         case 4:
 //            [self.navigationController pushViewController:[[ReusableViewController alloc] init] animated:YES];

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WaterFallLayout : UICollectionViewFlowLayout
 
--(instancetype)initWithHeightArray:(NSArray*)heightArray;
+-(instancetype)initWithHeightArray:(NSMutableArray*)heightArray;
 
 @end
 

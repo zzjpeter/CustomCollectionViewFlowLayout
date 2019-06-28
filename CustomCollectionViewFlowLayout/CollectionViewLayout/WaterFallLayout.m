@@ -19,11 +19,12 @@ static NSInteger numOfARow = 3;
 
 @property (nonatomic,strong) NSMutableArray<UICollectionViewLayoutAttributes *> *itemArray;
 
+
 @end
 
 @implementation WaterFallLayout
 
-- (instancetype)initWithHeightArray:(NSArray *)heightArray
+-(instancetype)initWithHeightArray:(NSMutableArray*)heightArray
 {
     if (self = [super init]) {
         self.itemHeightArray = heightArray;
@@ -68,33 +69,35 @@ static NSInteger numOfARow = 3;
     UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     
     //item的宽度，根据左右间距和中间间距算出item宽度
+    CGFloat minimumLineSpacing = self.minimumLineSpacing;
     CGFloat minimumInteritemSpacing = self.minimumInteritemSpacing;
-    CGFloat itemWidth = (self.collectionView.bounds.size.width - minimumInteritemSpacing) / numOfARow;
+    UIEdgeInsets sectionInset = self.sectionInset;
+    CGFloat itemWidth = (self.collectionView.bounds.size.width - minimumInteritemSpacing * (numOfARow - 1) - (sectionInset.left + sectionInset.right) ) / numOfARow;
     
     //item的高度
     CGFloat itemHeight = self.itemHeightArray[indexPath.row].floatValue;
     
     if (self.itemArray.count < numOfARow) {
         [self.itemArray addObject:attributes];
-        CGRect itemFrame = CGRectMake(minimumInteritemSpacing + (itemWidth +minimumInteritemSpacing) * (self.itemArray.count - 1), minimumInteritemSpacing, itemWidth, itemHeight);
+        CGRect itemFrame = CGRectMake(sectionInset.left + (itemWidth +minimumInteritemSpacing) * (self.itemArray.count - 1), sectionInset.top, itemWidth, itemHeight);
         attributes.frame = itemFrame;
     }else{
         UICollectionViewLayoutAttributes *firstAttribute = self.itemArray.firstObject;
         CGFloat minY = CGRectGetMaxY(firstAttribute.frame);
         CGFloat Y = minY;
         NSInteger index = 0;
-        CGRect itemFrame = CGRectMake(firstAttribute.frame.origin.x, CGRectGetMaxY(firstAttribute.frame) + minimumInteritemSpacing, itemWidth, itemHeight);
+        CGRect itemFrame = CGRectMake(firstAttribute.frame.origin.x, CGRectGetMaxY(firstAttribute.frame) + minimumLineSpacing, itemWidth, itemHeight);
         for (UICollectionViewLayoutAttributes *attri in self.itemArray) {
             if (minY > CGRectGetMaxY(attri.frame)) {
                 minY = CGRectGetMaxY(attri.frame);
                 Y = minY;
-                itemFrame = CGRectMake(attri.frame.origin.x, Y + minimumInteritemSpacing, itemWidth, itemHeight);
+                itemFrame = CGRectMake(attri.frame.origin.x, Y + minimumLineSpacing, itemWidth, itemHeight);
                 NSInteger currentIndex = [self.itemArray indexOfObject:attri];
                 index = currentIndex;
             }
-            attributes.frame = itemFrame;
-            [self.itemArray replaceObjectAtIndex:index withObject:attributes];
         }
+        attributes.frame = itemFrame;
+        [self.itemArray replaceObjectAtIndex:index withObject:attributes];
     }
     
     return attributes;
