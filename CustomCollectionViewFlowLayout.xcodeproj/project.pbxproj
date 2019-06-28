@@ -12,6 +12,9 @@
 		471A596622C4A23800773772 /* ReusableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A596522C4A23800773772 /* ReusableLayout.m */; };
 		471A596A22C4A5FC00773772 /* LayoutStringController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A596922C4A5FC00773772 /* LayoutStringController.m */; };
 		471A597322C5D83800773772 /* WaterFallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A597222C5D83800773772 /* WaterFallController.m */; };
+		471A597622C6011000773772 /* ReusableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A597522C6011000773772 /* ReusableViewController.m */; };
+		471A597922C603C000773772 /* ReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A597822C603C000773772 /* ReusableView.m */; };
+		471A597C22C609A500773772 /* DWReusableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A597B22C609A500773772 /* DWReusableLayout.m */; };
 		473E2B3222C07E220083675F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 473E2B3122C07E220083675F /* AppDelegate.m */; };
 		473E2B3522C07E220083675F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473E2B3422C07E220083675F /* ViewController.m */; };
 		473E2B3822C07E220083675F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473E2B3622C07E220083675F /* Main.storyboard */; };
@@ -32,6 +35,12 @@
 		471A596922C4A5FC00773772 /* LayoutStringController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutStringController.m; sourceTree = "<group>"; };
 		471A597122C5D83800773772 /* WaterFallController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFallController.h; sourceTree = "<group>"; };
 		471A597222C5D83800773772 /* WaterFallController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFallController.m; sourceTree = "<group>"; };
+		471A597422C6011000773772 /* ReusableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReusableViewController.h; sourceTree = "<group>"; };
+		471A597522C6011000773772 /* ReusableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReusableViewController.m; sourceTree = "<group>"; };
+		471A597722C603C000773772 /* ReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReusableView.h; sourceTree = "<group>"; };
+		471A597822C603C000773772 /* ReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReusableView.m; sourceTree = "<group>"; };
+		471A597A22C609A500773772 /* DWReusableLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWReusableLayout.h; sourceTree = "<group>"; };
+		471A597B22C609A500773772 /* DWReusableLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWReusableLayout.m; sourceTree = "<group>"; };
 		473E2B2D22C07E220083675F /* CustomCollectionViewFlowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCollectionViewFlowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		473E2B3022C07E220083675F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		473E2B3122C07E220083675F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +89,10 @@
 				471A596222C4939B00773772 /* WaterFallLayout.m */,
 				471A596422C4A23800773772 /* ReusableLayout.h */,
 				471A596522C4A23800773772 /* ReusableLayout.m */,
+				471A597A22C609A500773772 /* DWReusableLayout.h */,
+				471A597B22C609A500773772 /* DWReusableLayout.m */,
+				471A597722C603C000773772 /* ReusableView.h */,
+				471A597822C603C000773772 /* ReusableView.m */,
 			);
 			path = CollectionViewLayout;
 			sourceTree = "<group>";
@@ -91,6 +104,8 @@
 				471A596922C4A5FC00773772 /* LayoutStringController.m */,
 				471A597122C5D83800773772 /* WaterFallController.h */,
 				471A597222C5D83800773772 /* WaterFallController.m */,
+				471A597422C6011000773772 /* ReusableViewController.h */,
+				471A597522C6011000773772 /* ReusableViewController.m */,
 			);
 			path = TestVC;
 			sourceTree = "<group>";
@@ -241,11 +256,14 @@
 				473E2B3522C07E220083675F /* ViewController.m in Sources */,
 				473E2B4022C07E250083675F /* main.m in Sources */,
 				471A597322C5D83800773772 /* WaterFallController.m in Sources */,
+				471A597922C603C000773772 /* ReusableView.m in Sources */,
+				471A597C22C609A500773772 /* DWReusableLayout.m in Sources */,
 				47BC5C5622C20F580082DB5F /* CollectionViewFlowLayout.m in Sources */,
 				471A596A22C4A5FC00773772 /* LayoutStringController.m in Sources */,
 				473E2B4822C07FB20083675F /* CustomCollectionViewFlowLayout.m in Sources */,
 				471A596622C4A23800773772 /* ReusableLayout.m in Sources */,
 				473E2B3222C07E220083675F /* AppDelegate.m in Sources */,
+				471A597622C6011000773772 /* ReusableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

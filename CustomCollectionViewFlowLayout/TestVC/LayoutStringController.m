@@ -89,7 +89,7 @@
 - (UICollectionView *)collectionView{
     if (!_collectionView) {
 
-        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height) collectionViewLayout:[self flowLayout]];
+        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 64) collectionViewLayout:[self flowLayout]];
         _collectionView = collectionView;
 
         collectionView.backgroundColor = [UIColor clearColor];

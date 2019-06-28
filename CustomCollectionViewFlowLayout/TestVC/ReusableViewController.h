@@ -1,5 +1,5 @@
 //
-//  WaterFallController.h
+//  ReusableViewController.h
 //  CustomCollectionViewFlowLayout
 //
 //  Created by 朱志佳 on 2019/6/28.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WaterFallController : UIViewController
+@interface ReusableViewController : UIViewController
 
 @end
 
